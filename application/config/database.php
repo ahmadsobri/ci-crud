@@ -73,12 +73,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-$db['default'] = array(
+/*Connection Local*/
+/*$db['default'] = array(
 	'dsn'			=> '',
 	'hostname' 		=> 'localhost',
 	'username' 		=> 'postgres',
 	'password' 		=> 'root',//'',
 	'database' 		=> 'codeigniter_crud',
+	'dbdriver' 		=> 'postgre',//'mysqli',
+	'dbprefix' 		=> '',
+	'pconnect' 		=> FALSE,
+	'db_debug' 		=> (ENVIRONMENT !== 'production'),
+	'cache_on' 		=> FALSE,
+	'cachedir' 		=> '',
+	'char_set' 		=> 'utf8',
+	'dbcollat' 		=> 'utf8_general_ci',
+	'swap_pre' 		=> '',
+	'encrypt' 		=> FALSE,
+	'compress' 		=> FALSE,
+	'stricton' 		=> FALSE,
+	'failover' 		=> array(),
+	'save_queries' 	=> TRUE,
+    'port'          => 5432
+);*/
+
+/*Connection Heroku*/
+$db['default'] = array(
+	'dsn'			=> '',
+	'hostname' 		=> 'ec2-23-21-164-107.compute-1.amazonaws.com',
+	'username' 		=> 'ygtfeswcztakni',
+	'password' 		=> '5ef26abf15b6f5dfadf239f1ac21acb70694721f45e0aaad6693f4f89916fe6b',
+	'database' 		=> 'd2m6dge11eh8qs',
 	'dbdriver' 		=> 'postgre',//'mysqli',
 	'dbprefix' 		=> '',
 	'pconnect' 		=> FALSE,
